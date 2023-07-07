@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/', HomeController::class)->only(['index','store']);
+Route::resource('/test', HomeController::class)->only(['index','store']);
 
-Route::get('/test', function () {
+Route::get('/', function () {
     return view('text');
 });
