@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/test', HomeController::class)->only(['index','store']);
+Route::resource('/', HomeController::class);
 
-Route::get('/', function () {
-    return view('text');
+Route::resource('/dashboard', DashboardController::class);
+
+Route::get('/test', function () {
+    return view('schedule');
 });
