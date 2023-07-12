@@ -1,7 +1,7 @@
 <x-sublayout>
     <x-slot:title>
         GoodSuckle - Dashboard
-        </x-slot>
+    </x-slot>
         <section class="mt-10 mx-5">
             <h1 class="text-5xl">Dashboard</h1>
             <p class="mt-5 text-xl text-gray-600"> Welcome J.G Wetworth </p>
